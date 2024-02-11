@@ -13,3 +13,6 @@ Tax : amount of annual tax
 Bathroom : number of bathrooms
 Garage : number of garage
 Condition: condition of house (1 if good , 0 otherwise)
+
+License: CC0: Public Domain
+Link: https://www.kaggle.com/datasets/tawfikelmetwally/chicago-house-price
