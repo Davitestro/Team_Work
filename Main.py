@@ -84,3 +84,16 @@ plt.yticks(range(len(corr_matrix)), corr_matrix.columns)
 
 plt.show()
 
+plt.figure(figsize=(12, 6))
+plt.scatter(data['Space'], data['Price'], alpha=0.7, color='blue')
+plt.title('Scatter Plot of Price vs Space')
+plt.xlabel('Space')
+plt.ylabel('Price')
+plt.grid(True)
+plt.show()
+
+plt.figure(figsize=(12, 6))
+data.boxplot(column=['Price', 'Space', 'Lot'])
+plt.title('Box Plot of Price, Space, and Lot')
+plt.ylabel('Value')
+plt.show()
