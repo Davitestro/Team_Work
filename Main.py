@@ -60,6 +60,11 @@ visualize_data_before(data)
 
 filled_data = fill_missing_values_and_analyze(data)
 
+print(f"\t\t\tHead\n\n\n{filled_data.head()}\n\n")
+print(f"\t\t\tDescription\n\n\n{filled_data.describe()}\n\n")
+print(f"\t\t\tinfo\n\n\n{filled_data.info()}\n\n")
+
+
 visualize_data_before(filled_data)
 
 
