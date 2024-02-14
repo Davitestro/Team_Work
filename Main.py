@@ -75,6 +75,10 @@ plt.imshow(corr_matrix, cmap='coolwarm', interpolation='nearest')
 plt.title('Correlation Matrix')
 plt.colorbar()
 
+for i in range(len(corr_matrix)):
+    for j in range(len(corr_matrix)):
+        plt.text(j, i, f'{corr_matrix.iloc[i, j]:.2f}', ha='center', va='center', color='black')
+
 plt.xticks(range(len(corr_matrix)), corr_matrix.columns, rotation=45)
 plt.yticks(range(len(corr_matrix)), corr_matrix.columns)
 
